@@ -68,26 +68,29 @@
 
         // 箱を作成
         var geometry = new THREE.BoxGeometry(1, 2, 0.5);
-        var box = new THREE.Mesh(geometry, material);
-        box.position.set(0,1,0);
+        var box1 = new THREE.Mesh(geometry, material);
+        box1.position.set(0,1,0);
          // 箱を作成
         var geometry = new THREE.BoxGeometry(1, 2, 0.5);
-        var box = new THREE.Mesh(geometry, material);
-        box.position.set(0,5,0);
+        var box2 = new THREE.Mesh(geometry, material);
+        box2.position.set(0,5,0);
          // 箱を作成
         var geometry = new THREE.BoxGeometry(1, 2, 0.5);
-        var box = new THREE.Mesh(geometry, material);
-        box.position.set(5,1,0);
+        var box3 = new THREE.Mesh(geometry, material);
+        box3.position.set(5,1,0);
          // 箱を作成
         var geometry = new THREE.BoxGeometry(1, 2, 0.5);
-        var box = new THREE.Mesh(geometry, material);
-        box.position.set(5,5,0);
+        var box4 = new THREE.Mesh(geometry, material);
+        box4.position.set(5,5,0);
 
         //全体のオブジェクト
 
         const all = new THREE.Group();
         all.add(plane);//平面を追加
-        all.add(box); // ビルを追加
+        all.add(box1); // ビルを追加
+         all.add(box2); // ビルを追加
+         all.add(box3); // ビルを追加
+         all.add(box4); // ビルを追加
         all.position.set(0,0,0);//全体グループの原点の位置
         scene.add(all); 
 
